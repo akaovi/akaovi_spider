@@ -15,7 +15,7 @@ def add_file(path):
     有则返回字符串path
     反之创建并返回字符串path
     """
-    if os.path.exists(path):
+    if not os.path.exists(path):
         os.mkdir(path)
     return path
     
